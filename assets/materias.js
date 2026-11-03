@@ -1,0 +1,42 @@
+/* Datos oficiales del Profesorado de Educación Secundaria en Ciencias de la Administración
+   Diseño Curricular: Resolución N.º 13963-E/19 | Correlatividades: Resolución N.º 2311-E/20 */
+
+window.ADMIN_MATERIAS = [
+  /* 1.º AÑO */
+  { "id": 1, "year": 1, "field": "General", "name": "Pedagogía", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 2, "year": 1, "field": "General", "name": "Psicología Educacional", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 3, "year": 1, "field": "General", "name": "Alfabetización Académica", "format": "Taller", "weekly": "4", "regime": "1.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 11, "year": 1, "field": "Específica", "name": "Administración General", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 12, "year": 1, "field": "Específica", "name": "Sistema de Información Contable I", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 13, "year": 1, "field": "Específica", "name": "Economía I", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 14, "year": 1, "field": "Específica", "name": "Matemática para Administración y Economía", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 26, "year": 1, "field": "Práctica Profesional", "name": "Práctica I", "format": "Trabajo de Campo", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Promoción", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+
+  /* 2.º AÑO */
+  { "id": 4, "year": 2, "field": "General", "name": "Didáctica General", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [1], "rA": [1] } },
+  { "id": 5, "year": 2, "field": "General", "name": "Filosofía", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [], "cR": [1], "rA": [1] } },
+  { "id": 6, "year": 2, "field": "General", "name": "Historia de las Políticas Educativas en la Argentina", "format": "Seminario", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 15, "year": 2, "field": "Específica", "name": "Sujeto de la Educación", "format": "Materia", "weekly": "4", "regime": "2.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [], "cR": [2], "rA": [2] } },
+  { "id": 16, "year": 2, "field": "Específica", "name": "Economía II", "format": "Materia", "weekly": "5", "regime": "Anual", "hours": 160, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [13], "rA": [13] } },
+  { "id": 17, "year": 2, "field": "Específica", "name": "Sistema de Información Contable II", "format": "Materia", "weekly": "5", "regime": "Anual", "hours": 160, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [12], "rA": [12] } },
+  { "id": 18, "year": 2, "field": "Específica", "name": "Administración I", "format": "Materia", "weekly": "5", "regime": "Anual", "hours": 160, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [11], "rA": [11] } },
+  { "id": 27, "year": 2, "field": "Práctica Profesional", "name": "Práctica II", "format": "Trabajo de Campo", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Promoción", "libre": false, "requirements": { "cA": [26], "cR": [], "rA": [26] } },
+
+  /* 3.º AÑO */
+  { "id": 7, "year": 3, "field": "General", "name": "Educación Sexual Integral", "format": "Seminario", "weekly": "4", "regime": "1.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 8, "year": 3, "field": "General", "name": "Integración de las TIC en la Enseñanza", "format": "Taller", "weekly": "4", "regime": "2.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 9, "year": 3, "field": "General", "name": "Sociología de la Educación", "format": "Seminario", "weekly": "4", "regime": "1.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": true, "requirements": { "cA": [6, 27], "cR": [], "rA": [6, 27] } },
+  { "id": 19, "year": 3, "field": "Específica", "name": "Administración II", "format": "Materia", "weekly": "5", "regime": "Anual", "hours": 160, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [11], "cR": [18], "rA": [11, 18] } },
+  { "id": 20, "year": 3, "field": "Específica", "name": "Didáctica de la Ciencia de la Administración", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [4, 11, 12, 13], "cR": [16, 17, 18], "rA": [4, 11, 12, 13, 16, 17, 18] } },
+  { "id": 21, "year": 3, "field": "Específica", "name": "Derecho I", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [], "rA": [] } },
+  { "id": 22, "year": 3, "field": "Específica", "name": "Administración Financiera y Régimen Tributario", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [4], "cR": [18], "rA": [4, 18] } },
+  { "id": 28, "year": 3, "field": "Práctica Profesional", "name": "Práctica III", "format": "Práctica Docente", "weekly": "6", "regime": "Anual", "hours": 192, "accreditation": "Promoción", "libre": false, "requirements": { "cA": [27], "cR": [], "rA": [27] } },
+
+  /* 4.º AÑO */
+  { "id": 10, "year": 4, "field": "General", "name": "Ética Profesional Docente", "format": "Seminario", "weekly": "4", "regime": "1.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [5, 28], "cR": [], "rA": [5, 26, 28] } },
+  { "id": 23, "year": 4, "field": "Específica", "name": "Marketing", "format": "Taller", "weekly": "4", "regime": "1.º Cuatrimestre", "hours": 64, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [11, 13, 16, 18], "cR": [19, 20], "rA": [11, 13, 16, 18, 19, 20] } },
+  { "id": 24, "year": 4, "field": "Específica", "name": "Emprendedurismo", "format": "Taller", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [12, 17], "cR": [19, 20, 21, 22], "rA": [12, 17, 19, 20, 21, 22] } },
+  { "id": 25, "year": 4, "field": "Específica", "name": "Derecho II", "format": "Materia", "weekly": "4", "regime": "Anual", "hours": 128, "accreditation": "Prom./Ex.Final", "libre": false, "requirements": { "cA": [], "cR": [21], "rA": [21] } },
+  { "id": 30, "year": 4, "field": "Definición Institucional", "name": "Unidad Curricular de Definición Institucional (UDI)", "format": "Taller / Seminario", "weekly": "4", "regime": "2.º Cuatrimestre", "hours": 64, "accreditation": "Promoción", "libre": false, "requirements": { "cA": [1, 2, 3, 11, 12, 13, 14, 26, 4, 5, 6, 15, 16, 17, 18, 27], "cR": [], "rA": [1, 2, 3, 11, 12, 13, 14, 26, 4, 5, 6, 15, 16, 17, 18, 27] } },
+  { "id": 29, "year": 4, "field": "Práctica Profesional", "name": "Residencia Pedagógica", "format": "Práctica Docente", "weekly": "12", "regime": "Anual", "hours": 384, "accreditation": "Promoción", "libre": false, "requirements": { "cA": [1, 2, 3, 11, 12, 13, 14, 26, 4, 5, 6, 15, 16, 17, 18, 27, 28], "cR": [7, 8, 9, 19, 20, 21, 22], "rA": [1, 2, 3, 11, 12, 13, 14, 26, 4, 5, 6, 15, 16, 17, 18, 27, 7, 8, 9, 19, 20, 21, 22, 28] } }
+];

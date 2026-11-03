@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071326">
+  <meta name="description" content="Profesorado de Educación Secundaria en Ciencias de la Administración. IES N.º 9 Juana Azurduy, San Pedro de Jujuy. Diseño Curricular Res. 13963-E/19 y Correlatividades Res. 2311-E/20.">
+  <title>Ciencias de la Administración · IES N.º 9 «Juana Azurduy»</title>
+  <link rel="icon" type="image/png" href="assets/logoAdministracion.png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="assets/materias.js"></script>
+  <script defer src="assets/competencias.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-nav" href="#main-content">Saltar al contenido</a>
+
+  <!-- DEFINICIÓN DE ICONOS VECTORIALES DE INTERFAZ -->
+  <svg class="svg-sprites" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ico-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="ico-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="ico-next" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="ico-prev" viewBox="0 0 24 24"><path d="M19 12H5m6 6-6-6 6-6"/></symbol>
+    <symbol id="ico-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="ico-pdf" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6m-3 3 3 3 3-3"/></symbol>
+    <symbol id="ico-expand" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></symbol>
+    <symbol id="ico-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="ico-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="ico-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <div class="top-progress" id="top-progress" aria-hidden="true"></div>
+
+  <!-- DOCK FLOTANTE DE NAVEGACIÓN CON LOGOS COMPLETOS SIN RECORTE -->
+  <header class="floating-header" id="top">
+    <div class="shell">
+      <div class="dock-nav">
+        <a href="#top" class="dock-brand" aria-label="Profesorado en Ciencias de la Administración - IES Nº 9">
+          <div class="dock-emblems">
+            <img src="assets/logo-ies9.webp" alt="Escudo completo IES N.º 9 Juana Azurduy" class="emblem-ies-full" data-fallback="ies">
+            <img src="assets/logoAdministracion.png" data-try-srcs="assets/logoAdministracion.png,assets/logoAdministracion.jpg,assets/logoAdministracion_2.jpg" alt="Logo completo Profesorado en Ciencias de la Administración" class="emblem-admin-full" data-fallback="admin">
+          </div>
+          <div class="dock-title">
+            <span>IES N.º 9 «JUANA AZURDUY» · SAN PEDRO</span>
+            <strong>CS. DE LA ADMINISTRACIÓN</strong>
+          </div>
+        </a>
+
+        <button type="button" class="dock-burger" id="menu-toggle" aria-label="Abrir navegación" aria-expanded="false" aria-controls="dock-menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="dock-links" id="dock-menu" aria-label="Menú principal">
+          <a href="#comunidad">Comunidad</a>
+          <a href="#malla">Malla y Correlativas</a>
+          <a href="#arquitectura">Diseño Curricular</a>
+          <a href="#incumbencias">Alcance de Título</a>
+          <a href="#vocacion">Perfil Docente</a>
+          <a href="#ingreso" class="dock-cta">Inscripción <svg class="ico"><use href="#ico-next"/></svg></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- PORTADA ASIMÉTRICA BENTO + ESCUDOS COMPLETOS E ICONOS SVG OFICIALES -->
+    <section class="bento-hero" aria-labelledby="hero-heading">
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="shell hero-bento-grid">
+        <!-- Columna Principal: Identidad y Propuesta -->
+        <div class="bento-cell bento-main-pitch" data-animate>
+          <div class="status-pill">
+            <span class="live-dot"></span> FORMACIÓN DOCENTE DE NIVEL SUPERIOR · DESDE 2022
+          </div>
+          <h1 id="hero-heading">
+            Donde la <span>Ciencia Organizacional</span> se convierte en <em>Enseñanza Transformadora</em>.
+          </h1>
+          <p class="hero-subtext">
+            Formate como <strong>Profesor/a de Educación Secundaria en Ciencias de la Administración</strong> en el IES N.º 9 «Juana Azurduy». Dominá la contabilidad, las finanzas, la economía sostenible, el derecho y la didáctica con título de validez nacional.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#malla" class="btn-solid-orange">
+              Simulador de Correlatividades <svg class="ico"><use href="#ico-next"/></svg>
+            </a>
+            <a href="documentos/13963-CS-DE-LA-ADMINISTRACION_WI (3)_260923_205716.pdf" target="_blank" rel="noopener" class="btn-glass-navy">
+              <svg class="ico"><use href="#ico-pdf"/></svg> Diseño Curricular (PDF)
+            </a>
+            <a href="documentos/2311-E-20-Correlatividades-Administración.pdf" target="_blank" rel="noopener" class="btn-glass-navy">
+              <svg class="ico"><use href="#ico-pdf"/></svg> Res. 2311-E/20 (PDF)
+            </a>
+          </div>
+
+          <div class="hero-mini-metrics">
+            <div class="mini-metric">
+              <strong>4 Años</strong>
+              <span>Cursado presencial</span>
+            </div>
+            <div class="mini-metric">
+              <strong>30 Espacios</strong>
+              <span>Materias, talleres y seminarios</span>
+            </div>
+            <div class="mini-metric">
+              <strong>3776 Hs Cát.</strong>
+              <span>2517 hs reloj totales</span>
+            </div>
+            <div class="mini-metric">
+              <strong>50,85%</strong>
+              <span>Formación Específica</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Tarjeta Destacada con Ambos Logos Completos y los 4 Iconos SVG -->
+        <div class="bento-cell bento-emblem-showcase" data-animate>
+          <div class="dual-logos-stage">
+            <div class="full-logo-frame frame-ies">
+              <img src="assets/logo-ies9.webp" alt="Escudo Oficial IES N.º 9 Juana Azurduy" class="hero-ies-full" data-fallback="ies">
+            </div>
+            <div class="full-logo-frame frame-admin">
+              <img src="assets/logoAdministracion.png" data-try-srcs="assets/logoAdministracion.png,assets/logoAdministracion.jpg,assets/logoAdministracion_2.jpg" alt="Logo Oficial Profesorado en Ciencias de la Administración" class="hero-admin-full" data-fallback="admin">
+            </div>
+          </div>
+
+          <div class="emblem-caption">
+            <span class="seal-tag">RESOLUCIÓN MINISTERIAL N.º 13963-E/19</span>
+            <h2>Profesor/a de Educación Secundaria en Ciencias de la Administración</h2>
+            <p>Articulación teórica y práctica con escuelas secundarias asociadas desde el primer año de cursado.</p>
+          </div>
+
+          <div class="bento-quick-badges">
+            <span>
+              <img src="assets/administracionyfinanzas.svg" alt="" class="custom-svg-ico"> Administración y Finanzas
+            </span>
+            <span>
+              <img src="assets/gestiondeorganizaciones.svg" alt="" class="custom-svg-ico"> Gestión de Organizaciones
+            </span>
+            <span>
+              <img src="assets/economiasostenible.svg" alt="" class="custom-svg-ico"> Economía Sostenible
+            </span>
+            <span>
+              <img src="assets/pedagogiayformacion.svg" alt="" class="custom-svg-ico"> Pedagogía y Formación
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CINTA FINANCIERA / ACADÉMICA ANIMADA -->
+      <div class="ticker-tape" aria-hidden="true">
+        <div class="ticker-track">
+          <span>ADMINISTRACIÓN GENERAL</span> <b>◆</b>
+          <span>SISTEMA DE INFORMACIÓN CONTABLE I Y II</span> <b>◆</b>
+          <span>MICRO Y MACROECONOMÍA</span> <b>◆</b>
+          <span>DERECHO CONSTITUCIONAL, COMERCIAL Y LABORAL</span> <b>◆</b>
+          <span>ADMINISTRACIÓN FINANCIERA Y RÉGIMEN TRIBUTARIO</span> <b>◆</b>
+          <span>MARKETING Y EMPRENDEDURISMO</span> <b>◆</b>
+          <span>RESIDENCIA PEDAGÓGICA</span> <b>◆</b>
+          <span>ADMINISTRACIÓN GENERAL</span> <b>◆</b>
+          <span>SISTEMA DE INFORMACIÓN CONTABLE I Y II</span> <b>◆</b>
+          <span>MICRO Y MACROECONOMÍA</span> <b>◆</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 01: CARRUSEL CINEMATOGRÁFICO DE LOS GRUPOS (GRUPO 1 A 5) -->
+    <section class="section-block section-carousel-stage" id="comunidad" aria-labelledby="carousel-heading">
+      <div class="shell">
+        <div class="block-header-row" data-animate>
+          <div>
+            <span class="kicker-badge"><b class="kicker-num">01</b> IDENTIDAD Y COMUNIDAD EDUCATIVA</span>
+            <h2 id="carousel-heading">Nuestras Cohortes y Equipo Docente en <span>Acción</span></h2>
+          </div>
+          <p class="block-lead">Conocé a los protagonistas del Profesorado en Ciencias de la Administración del IES N.º 9 «Juana Azurduy» luciendo los colores azul marino y azul francia de nuestra carrera.</p>
+        </div>
+
+        <!-- CARRUSEL INTERACTIVO DE GRUPOS -->
+        <div class="group-carousel-wrapper" id="group-carousel" data-animate>
+          <div class="group-stage">
+            <!-- Slide 1 -->
+            <figure class="group-slide is-active" data-index="0">
+              <img src="assets/grupo 5.jpg" alt="Comunidad completa de estudiantes y docentes del Profesorado en Ciencias de la Administración">
+              <figcaption class="group-caption">
+                <div class="caption-meta">
+                  <span class="caption-pill">FOTOGRAFÍA INSTITUCIONAL 01 / 05</span>
+                  <strong>Comunidad Plena del Profesorado en Ciencias de la Administración</strong>
+                  <p>Estudiantes de los distintos años junto al cuerpo docente y directivo del IES N.º 9 «Juana Azurduy».</p>
+                </div>
+                <button type="button" class="btn-zoom-slide" data-zoom="0" aria-label="Ampliar imagen a pantalla completa">
+                  <svg class="ico"><use href="#ico-expand"/></svg> Pantalla Completa
+                </button>
+              </figcaption>
+            </figure>
+
+            <!-- Slide 2 -->
+            <figure class="group-slide" data-index="1">
+              <img src="assets/grupo 1.jpg" alt="Equipo docente y estudiantes de Ciencias de la Administración con uniforme oficial">
+              <figcaption class="group-caption">
+                <div class="caption-meta">
+                  <span class="caption-pill">FOTOGRAFÍA INSTITUCIONAL 02 / 05</span>
+                  <strong>Identidad, Compromiso y Vocación Pedagógica</strong>
+                  <p>Formación situada con acompañamiento continuo en el trayecto de la Práctica Profesional Docente.</p>
+                </div>
+                <button type="button" class="btn-zoom-slide" data-zoom="1" aria-label="Ampliar imagen a pantalla completa">
+                  <svg class="ico"><use href="#ico-expand"/></svg> Pantalla Completa
+                </button>
+              </figcaption>
+            </figure>
+
+            <!-- Slide 3 -->
+            <figure class="group-slide" data-index="2">
+              <img src="assets/grupo 2.jpg" alt="Cohorte de estudiantes del Profesorado en Administración en el salón del instituto">
+              <figcaption class="group-caption">
+                <div class="caption-meta">
+                  <span class="caption-pill">FOTOGRAFÍA INSTITUCIONAL 03 / 05</span>
+                  <strong>Protagonistas de la Transformación Educativa en Jujuy</strong>
+                  <p>Trabajo colaborativo, pensamiento crítico y construcción de saberes organizacionales y contables.</p>
+                </div>
+                <button type="button" class="btn-zoom-slide" data-zoom="2" aria-label="Ampliar imagen a pantalla completa">
+                  <svg class="ico"><use href="#ico-expand"/></svg> Pantalla Completa
+                </button>
+              </figcaption>
+            </figure>
+
+            <!-- Slide 4 -->
+            <figure class="group-slide" data-index="3">
+              <img src="assets/grupo 3.jpg" alt="Docentes formadores y estudiantes de la carrera de Administración">
+              <figcaption class="group-caption">
+                <div class="caption-meta">
+                  <span class="caption-pill">FOTOGRAFÍA INSTITUCIONAL 04 / 05</span>
+                  <strong>Articulación entre Docentes Formadores y Futuros Profesores</strong>
+                  <p>Ateneos, talleres integradores y espacios de reflexión pedagógica en San Pedro de Jujuy.</p>
+                </div>
+                <button type="button" class="btn-zoom-slide" data-zoom="3" aria-label="Ampliar imagen a pantalla completa">
+                  <svg class="ico"><use href="#ico-expand"/></svg> Pantalla Completa
+                </button>
+              </figcaption>
+            </figure>
+
+            <!-- Slide 5 -->
+            <figure class="group-slide" data-index="4">
+              <img src="assets/grupo 4.jpg" alt="Estudiantes avanzados y profesores en jornada académica">
+              <figcaption class="group-caption">
+                <div class="caption-meta">
+                  <span class="caption-pill">FOTOGRAFÍA INSTITUCIONAL 05 / 05</span>
+                  <strong>Liderazgo Académico y Práctica Profesional</strong>
+                  <p>Preparación integral para la Residencia Pedagógica y la inserción laboral en el Nivel Secundario.</p>
+                </div>
+                <button type="button" class="btn-zoom-slide" data-zoom="4" aria-label="Ampliar imagen a pantalla completa">
+                  <svg class="ico"><use href="#ico-expand"/></svg> Pantalla Completa
+                </button>
+              </figcaption>
+            </figure>
+
+            <!-- Botones Laterales Flotantes -->
+            <button type="button" class="stage-nav stage-prev" id="group-prev" aria-label="Foto anterior">
+              <svg class="ico"><use href="#ico-prev"/></svg>
+            </button>
+            <button type="button" class="stage-nav stage-next" id="group-next" aria-label="Siguiente foto">
+              <svg class="ico"><use href="#ico-next"/></svg>
+            </button>
+
+            <!-- Barra de Progreso Automática del Carrusel -->
+            <div class="carousel-timer-bar"><span id="carousel-timer-fill"></span></div>
+          </div>
+
+          <!-- TIRA DE MINIATURAS INTERACTIVAS (FILMSTRIP) -->
+          <div class="group-thumbnails" role="tablist" aria-label="Miniaturas de fotografías de grupos">
+            <button type="button" class="thumb-btn is-active" data-slide-to="0" role="tab" aria-selected="true">
+              <img src="assets/grupo 5.jpg" alt="Miniatura Comunidad Plena">
+              <span>Comunidad Plena</span>
+            </button>
+            <button type="button" class="thumb-btn" data-slide-to="1" role="tab" aria-selected="false">
+              <img src="assets/grupo 1.jpg" alt="Miniatura Cohorte I">
+              <span>Cohorte y Docentes I</span>
+            </button>
+            <button type="button" class="thumb-btn" data-slide-to="2" role="tab" aria-selected="false">
+              <img src="assets/grupo 2.jpg" alt="Miniatura Cohorte II">
+              <span>Cohorte y Docentes II</span>
+            </button>
+            <button type="button" class="thumb-btn" data-slide-to="3" role="tab" aria-selected="false">
+              <img src="assets/grupo 3.jpg" alt="Miniatura Equipo Académico III">
+              <span>Equipo Académico III</span>
+            </button>
+            <button type="button" class="thumb-btn" data-slide-to="4" role="tab" aria-selected="false">
+              <img src="assets/grupo 4.jpg" alt="Miniatura Práctica y Residencia IV">
+              <span>Práctica y Residencia IV</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 02: TABLERO EJECUTIVO DEL PLAN DE ESTUDIOS Y CORRELATIVIDADES -->
+    <section class="section-block section-navy-matrix" id="malla" aria-labelledby="malla-heading">
+      <div class="shell">
+        <div class="block-header-row" data-animate>
+          <div>
+            <span class="kicker-badge kicker-light"><b class="kicker-num">02</b> SIMULADOR ACADÉMICO INTERACTIVO · RES. N.º 2311-E/20</span>
+            <h2 id="malla-heading">Malla Curricular y Radar de <span>Correlatividades</span></h2>
+          </div>
+          <p class="block-lead text-soft">Seleccioná cualquier unidad curricular para iluminar al instante qué materias debés tener <strong>aprobadas</strong> o <strong>regulares</strong> para cursar, cuáles necesitás para <strong>rendir/promocionar</strong> y qué materias futuras destraba.</p>
+        </div>
+
+        <!-- PANEL DE CONTROL MULTIFILTRO (AÑO + CAMPO + BUSCADOR) -->
+        <div class="matrix-command-bar" data-animate>
+          <div class="matrix-filters-row">
+            <div class="filter-group" role="group" aria-label="Filtrar por año académico">
+              <span class="filter-label">AÑO DE CURSADO:</span>
+              <div class="pill-buttons">
+                <button type="button" data-year="1" class="matrix-btn is-active" aria-pressed="true">1.º Año (960 hs)</button>
+                <button type="button" data-year="2" class="matrix-btn" aria-pressed="false">2.º Año (1056 hs)</button>
+                <button type="button" data-year="3" class="matrix-btn" aria-pressed="false">3.º Año (992 hs)</button>
+                <button type="button" data-year="4" class="matrix-btn" aria-pressed="false">4.º Año (896 hs)</button>
+                <button type="button" data-year="all" class="matrix-btn" aria-pressed="false">Malla Completa (30)</button>
+              </div>
+            </div>
+
+            <div class="filter-group" role="group" aria-label="Filtrar por campo de formación">
+              <span class="filter-label">FILTRAR CAMPO:</span>
+              <div class="pill-buttons">
+                <button type="button" data-field="all" class="field-filter-btn is-active">Todos</button>
+                <button type="button" data-field="Específica" class="field-filter-btn">Específica (15)</button>
+                <button type="button" data-field="General" class="field-filter-btn">General (10)</button>
+                <button type="button" data-field="Práctica" class="field-filter-btn">Práctica (4)</button>
+                <button type="button" data-field="libre" class="field-filter-btn">(*) Admite Libre (6)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="matrix-search-row">
+            <label class="matrix-search-input">
+              <svg class="ico"><use href="#ico-search"/></svg>
+              <span class="sr-only">Buscar materia por nombre, número o formato</span>
+              <input id="subject-search" type="search" inputmode="search" placeholder="Escribí el nombre de la unidad (ej. Contable, Economía, Derecho, Práctica) o N.º de orden..." autocomplete="off">
+            </label>
+
+            <div class="matrix-status-pills">
+              <span class="status-chip"><i class="swatch-selected"></i> Unidad Activa</span>
+              <span class="status-chip"><i class="swatch-approved"></i> Pide Aprobada</span>
+              <span class="status-chip"><i class="swatch-regular"></i> Pide Regular</span>
+              <span class="status-chip"><i class="swatch-unlocks"></i> Habilita Cursar</span>
+              <strong class="matrix-counter" id="subject-count" role="status" aria-live="polite">8 unidades</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- GRILLA DE TARJETAS EN 3 COLUMNAS DE ALTA DENSIDAD VISUAL -->
+        <div class="matrix-cards-grid" id="subjects-list" aria-label="Unidades curriculares del plan de estudios"></div>
+
+        <!-- PIE NORMATIVO DEL EXPLORADOR -->
+        <div class="matrix-normative-bar" data-animate>
+          <div>
+            <strong>Régimen de Correlatividades y Acreditación (Anexo Único · Resolución N.º 2311-E/20)</strong>
+            <p>Las unidades curriculares identificadas con <strong>(*)</strong> admiten la condición de <em>Alumno Libre por opción</em>. Las unidades del Campo de la Práctica Profesional se acreditan por Promoción y no admiten examen final ni condición de libre.</p>
+          </div>
+          <a href="documentos/2311-E-20-Correlatividades-Administración.pdf" target="_blank" rel="noopener" class="btn-solid-orange">
+            <svg class="ico"><use href="#ico-pdf"/></svg> Descargar Planilla Oficial PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 03: ARQUITECTURA CURRICULAR CON ANILLOS SVG Y REPOSITORIO PDF -->
+    <section class="section-block section-light-bento" id="arquitectura" aria-labelledby="arq-heading">
+      <div class="shell">
+        <div class="block-header-row" data-animate>
+          <div>
+            <span class="kicker-badge"><b class="kicker-num">03</b> ARQUITECTURA DEL DISEÑO CURRICULAR · RES. N.º 13963-E/19</span>
+            <h2 id="arq-heading">Distribución Horaria, Formatos y <span>Ejes Disciplinares</span></h2>
+          </div>
+          <p class="block-lead">El plan de estudios articula cuatro campos formativos a través de Materias, Seminarios, Talleres, Trabajos de Campo y Prácticas Docentes.</p>
+        </div>
+
+        <!-- ANILLOS SVG DE DISTRIBUCIÓN POR CAMPOS -->
+        <div class="rings-bento-grid" data-animate>
+          <article class="ring-card ring-card-primary">
+            <div class="svg-ring-wrap">
+              <svg viewBox="0 0 120 120" class="donut-svg">
+                <circle cx="60" cy="60" r="50" class="donut-bg"/>
+                <circle cx="60" cy="60" r="50" class="donut-fill fill-orange" stroke-dasharray="160 314"/>
+              </svg>
+              <span class="ring-value">50,85%</span>
+            </div>
+            <div class="ring-info">
+              <span class="ring-tag">1920 HS CÁTEDRA · 1280 HS RELOJ</span>
+              <h3>Campo de la Formación Específica</h3>
+              <p>15 unidades troncales en Administración General, I y II, Sistemas de Información Contable I y II, Economía I y II, Matemática y Estadística, Derecho I y II, Finanzas, Tributación, Marketing, Emprendedurismo y Didáctica Específica.</p>
+            </div>
+          </article>
+
+          <article class="ring-card">
+            <div class="svg-ring-wrap">
+              <svg viewBox="0 0 120 120" class="donut-svg">
+                <circle cx="60" cy="60" r="50" class="donut-bg"/>
+                <circle cx="60" cy="60" r="50" class="donut-fill fill-navy" stroke-dasharray="80 314"/>
+              </svg>
+              <span class="ring-value">25,42%</span>
+            </div>
+            <div class="ring-info">
+              <span class="ring-tag">960 HS CÁTEDRA · 640 HS RELOJ</span>
+              <h3>Campo de la Formación General</h3>
+              <p>10 unidades orientadas al marco pedagógico, psicológico, filosófico, histórico-político, sociológico, ético, Educación Sexual Integral (ESI) e Integración de las TIC en la Enseñanza.</p>
+            </div>
+          </article>
+
+          <article class="ring-card">
+            <div class="svg-ring-wrap">
+              <svg viewBox="0 0 120 120" class="donut-svg">
+                <circle cx="60" cy="60" r="50" class="donut-bg"/>
+                <circle cx="60" cy="60" r="50" class="donut-fill fill-blue" stroke-dasharray="69 314"/>
+              </svg>
+              <span class="ring-value">22,03%</span>
+            </div>
+            <div class="ring-info">
+              <span class="ring-tag">832 HS CÁTEDRA · 554 H 40 M RELOJ</span>
+              <h3>Campo de la Práctica Profesional</h3>
+              <p>Trayecto gradual en equipo de cátedra (Profesor de Práctica + Taller Integrador) desde Práctica I, II y III hasta la Residencia Pedagógica (12 hs cátedra semanales en 4.º año).</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- REPOSITORIO DE DOCUMENTOS OFICIALES (CARPETA /documentos) -->
+        <div class="docs-vault-banner" data-animate>
+          <div class="vault-copy">
+            <span class="kicker-badge">DOCUMENTACIÓN NORMATIVA OFICIAL</span>
+            <h3>Descargá las Resoluciones Ministeriales Completas</h3>
+            <p>Accedé a los documentos oficiales del Ministerio de Educación de la Provincia de Jujuy alojados en el repositorio institucional.</p>
+          </div>
+          <div class="vault-cards">
+            <a href="documentos/13963-CS-DE-LA-ADMINISTRACION_WI (3)_260923_205716.pdf" target="_blank" rel="noopener" class="vault-doc-card">
+              <div class="vault-icon"><svg class="ico"><use href="#ico-pdf"/></svg></div>
+              <div>
+                <span>RESOLUCIÓN N.º 13963-E/19 (62 PÁGS.)</span>
+                <strong>Diseño Curricular Provincial Completo</strong>
+                <small>Fundamentación, perfil del egresado, capacidades y descriptores de las 30 unidades.</small>
+              </div>
+            </a>
+            <a href="documentos/2311-E-20-Correlatividades-Administración.pdf" target="_blank" rel="noopener" class="vault-doc-card">
+              <div class="vault-icon"><svg class="ico"><use href="#ico-pdf"/></svg></div>
+              <div>
+                <span>RESOLUCIÓN N.º 2311-E/20 (ANEXO ÚNICO)</span>
+                <strong>Régimen de Correlatividades y Acreditación</strong>
+                <small>Requisitos de cursado, promoción, examen final y condición de alumno libre.</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 04: MATRIZ DE INCUMBENCIAS CON SIDEBAR STICKY -->
+    <section class="section-block section-navy-matrix" id="incumbencias" aria-labelledby="inc-heading">
+      <div class="shell">
+        <div class="incumbencias-split-layout">
+          <!-- Columna Izquierda Fija (Sticky Sidebar) -->
+          <aside class="inc-sidebar" data-animate>
+            <span class="kicker-badge kicker-light"><b class="kicker-num">04</b> CAMPO LABORAL DOCENTE</span>
+            <h2 id="inc-heading">Alcance del Título e <span>Incumbencias</span></h2>
+            <p>Tu título oficial habilita la cobertura de cátedras en Bachilleratos Orientados, Escuelas Técnicas, Agrotécnicas y Centros EPJA de toda la provincia.</p>
+
+            <div class="inc-vertical-filters" role="group" aria-label="Filtrar espacios laborales por modalidad">
+              <button type="button" data-comp-filter="all" class="inc-tab-btn is-active" aria-pressed="true">
+                <span>Todas las Modalidades</span>
+                <b>24</b>
+              </button>
+              <button type="button" data-comp-filter="bachiller" class="inc-tab-btn" aria-pressed="false">
+                <span>Bachilleratos Orientados</span>
+                <b>11</b>
+              </button>
+              <button type="button" data-comp-filter="tecnica" class="inc-tab-btn" aria-pressed="false">
+                <span>Escuelas Técnicas y Agro</span>
+                <b>9</b>
+              </button>
+              <button type="button" data-comp-filter="epja" class="inc-tab-btn" aria-pressed="false">
+                <span>Jóvenes y Adultos (EPJA)</span>
+                <b>4</b>
+              </button>
+              <button type="button" data-comp-filter="docente" class="inc-tab-btn" aria-pressed="false">
+                <span>Carácter Docente Titular</span>
+                <b>23</b>
+              </button>
+            </div>
+
+            <label class="inc-search-box">
+              <svg class="ico"><use href="#ico-search"/></svg>
+              <input id="comp-search" type="search" inputmode="search" placeholder="Filtrar asignatura (ej. Contable, Derecho, Marketing)..." autocomplete="off">
+            </label>
+            <div class="inc-count-label" id="comp-count" role="status" aria-live="polite">Mostrando 24 espacios curriculares</div>
+          </aside>
+
+          <!-- Columna Derecha: Grilla de Espacios Curriculares Secundarios -->
+          <div class="inc-results-column" data-animate>
+            <div class="inc-cards-list" id="comp-list" aria-label="Asignaturas habilitadas en nivel secundario"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 05: PERFILES CON LAS 4 IMÁGENES 3D E ICONOS SVG OFICIALES -->
+    <section class="section-block section-light-bento" id="vocacion" aria-labelledby="voc-heading">
+      <div class="shell">
+        <div class="block-header-row" data-animate>
+          <div>
+            <span class="kicker-badge"><b class="kicker-num">05</b> PERFIL DEL EGRESADO Y VOCACIÓN</span>
+            <h2 id="voc-heading">Cuatro Dimensiones de tu <span>Futuro Profesional</span></h2>
+          </div>
+          <p class="block-lead">Tocá o hacé clic en cada tarjeta para desplegar las ilustraciones de perfil y las áreas de dominio que desarrollarás durante tu formación en el IES N.º 9.</p>
+        </div>
+
+        <!-- ACORDEÓN INTERACTIVO CON IMÁGENES DE PERFIL Y SVGS PERSONALIZADOS -->
+        <div class="expanding-deck" id="vocation-deck" data-animate>
+          <!-- Perfil 01: Liderazgo y Gestión -->
+          <article class="deck-card is-expanded" data-deck="0" tabindex="0">
+            <div class="deck-card-head">
+              <div class="deck-top-meta">
+                <span class="deck-index">PERFIL 01</span>
+                <div class="deck-icon">
+                  <img src="assets/gestiondeorganizaciones.svg" alt="Icono Gestión de Organizaciones" class="deck-svg-img">
+                </div>
+              </div>
+              <h3>Liderazgo y Gestión de Organizaciones</h3>
+            </div>
+
+            <div class="deck-visual-box">
+              <img src="assets/perfil-liderazgo.png" data-try-srcs="assets/perfil-liderazgo.png,assets/perfil-liderazgo.jpg,assets/perfil-liderazgo.webp" alt="Perfil Liderazgo y Gestión de Organizaciones" class="deck-profile-img">
+            </div>
+
+            <div class="deck-card-body">
+              <p>Analizarás empresas privadas, organismos estatales y cooperativas desde un enfoque sistémico, ético y sostenible, incorporando liderazgo colaborativo (Redarquía y Management 2.0).</p>
+              <div class="deck-tags">
+                <span>Administración General</span>
+                <span>Administración I y II</span>
+                <span>Gestión Pública</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Perfil 02: Administración y Finanzas -->
+          <article class="deck-card" data-deck="1" tabindex="0">
+            <div class="deck-card-head">
+              <div class="deck-top-meta">
+                <span class="deck-index">PERFIL 02</span>
+                <div class="deck-icon">
+                  <img src="assets/administracionyfinanzas.svg" alt="Icono Administración y Finanzas" class="deck-svg-img">
+                </div>
+              </div>
+              <h3>Sistemas Contables, Finanzas y Tributación</h3>
+            </div>
+
+            <div class="deck-visual-box">
+              <img src="assets/perfil-finanzas.png" data-try-srcs="assets/perfil-finanzas.png,assets/perfil-finanzas.jpg,assets/perfil-finanzas.webp" alt="Perfil Finanzas y Contabilidad" class="deck-profile-img">
+            </div>
+
+            <div class="deck-card-body">
+              <p>Dominarás el proceso contable manual y computarizado, la confección de estados patrimoniales, liquidación de haberes, derecho comercial y el régimen impositivo nacional y provincial.</p>
+              <div class="deck-tags">
+                <span>SIC I y II</span>
+                <span>Adm. Financiera y Tributaria</span>
+                <span>Derecho I y II</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Perfil 03: Emprendedurismo y Economía Sostenible -->
+          <article class="deck-card" data-deck="2" tabindex="0">
+            <div class="deck-card-head">
+              <div class="deck-top-meta">
+                <span class="deck-index">PERFIL 03</span>
+                <div class="deck-icon">
+                  <img src="assets/economiasostenible.svg" alt="Icono Economía Sostenible" class="deck-svg-img">
+                </div>
+              </div>
+              <h3>Economía Sostenible, Marketing y Emprendimientos</h3>
+            </div>
+
+            <div class="deck-visual-box">
+              <img src="assets/perfil-emprendedor.png" data-try-srcs="assets/perfil-emprendedor.png,assets/perfil-emprendedor.jpg,assets/perfil-emprendedor_2.jpg,assets/perfil-emprendedor.webp" alt="Perfil Emprendedor y Economía Sostenible" class="deck-profile-img">
+            </div>
+
+            <div class="deck-card-body">
+              <p>Formularás planes de negocios integrales, estudios de mercado, matrices FODA y proyectos socio-productivos orientados al consumo responsable y al desarrollo local de Jujuy.</p>
+              <div class="deck-tags">
+                <span>Economía I y II</span>
+                <span>Marketing</span>
+                <span>Taller de Emprendedurismo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Perfil 04: Pedagogía y Formación Docente -->
+          <article class="deck-card" data-deck="3" tabindex="0">
+            <div class="deck-card-head">
+              <div class="deck-top-meta">
+                <span class="deck-index">PERFIL 04</span>
+                <div class="deck-icon">
+                  <img src="assets/pedagogiayformacion.svg" alt="Icono Pedagogía y Formación" class="deck-svg-img">
+                </div>
+              </div>
+              <h3>Pedagogía, Didáctica y Transformación Áulica</h3>
+            </div>
+
+            <div class="deck-visual-box">
+              <img src="assets/perfil-docente.png" data-try-srcs="assets/perfil-docente.png,assets/perfil-docente.jpg,assets/perfil-docente.webp" alt="Perfil Docente en Ciencias de la Administración" class="deck-profile-img">
+            </div>
+
+            <div class="deck-card-body">
+              <p>Integrarás los saberes específicos con la Didáctica de las Ciencias de la Administración y las TIC para diseñar propuestas de enseñanza motivadoras e inclusivas en el Nivel Secundario.</p>
+              <div class="deck-tags">
+                <span>Didáctica de la Administración</span>
+                <span>Integración de las TIC</span>
+                <span>Residencia Pedagógica</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- BANDA DE LAS 6 CAPACIDADES PROFESIONALES (RES. CFE 337/18) -->
+        <div class="cfe-capacities-strip" data-animate>
+          <div class="cfe-strip-title">
+            <span>MARCO REFERENCIAL NACIONAL · RESOLUCIÓN CFE N.º 337/18</span>
+            <strong>Las 6 Capacidades Profesionales Transversales de la Formación Docente</strong>
+          </div>
+          <div class="cfe-steps-grid">
+            <div class="cfe-step"><b>I</b><span>Dominar los saberes a enseñar</span></div>
+            <div class="cfe-step"><b>II</b><span>Actuar según los modos de aprender</span></div>
+            <div class="cfe-step"><b>III</b><span>Dirigir la enseñanza y gestionar la clase</span></div>
+            <div class="cfe-step"><b>IV</b><span>Intervenir en la dinámica grupal</span></div>
+            <div class="cfe-step"><b>V</b><span>Intervenir en la institución y comunidad</span></div>
+            <div class="cfe-step"><b>VI</b><span>Comprometerse con la formación continua</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 06: CENTRO DE INGRESO (LEGAJO INTERACTIVO) Y CONTACTO SIN TELÉFONO -->
+    <section class="section-block section-navy-matrix" id="ingreso" aria-labelledby="ingreso-heading">
+      <div class="shell">
+        <div class="hub-grid">
+          <!-- Tarjeta Izquierda: Verificador de Legajo con Anillo SVG en Vivo -->
+          <div class="legajo-widget" data-animate>
+            <div class="legajo-top">
+              <div>
+                <span class="kicker-badge"><b class="kicker-num">06</b> ORGANIZADOR PERSONAL DE INGRESO</span>
+                <h2 id="ingreso-heading">Verificador de Legajo de Inscripción</h2>
+                <p>Marcá los requisitos que ya tenés listos. Tu progreso se guarda automáticamente en tu celular o computadora.</p>
+              </div>
+              <div class="legajo-ring-box">
+                <svg viewBox="0 0 100 100" class="legajo-ring-svg">
+                  <circle cx="50" cy="50" r="42" class="legajo-ring-bg"/>
+                  <circle cx="50" cy="50" r="42" id="legajo-ring-fill" class="legajo-ring-progress" stroke-dasharray="0 264"/>
+                </svg>
+                <div class="legajo-ring-text">
+                  <strong id="checklist-percent">0%</strong>
+                  <span><b id="checklist-count">0</b>/11</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="legajo-actions-bar">
+              <span>Documentación oficial solicitada por Secretaría:</span>
+              <button type="button" class="btn-reset-legajo" id="reset-checklist">Reiniciar marcas</button>
+            </div>
+
+            <div class="legajo-items-grid" id="checklist-items">
+              <label><input type="checkbox" data-doc="dni"><span>Fotocopia de DNI (anverso y reverso)</span></label>
+              <label><input type="checkbox" data-doc="partida"><span>Partida de nacimiento actualizada</span></label>
+              <label><input type="checkbox" data-doc="titulo"><span>Constancia o Título Secundario</span></label>
+              <label><input type="checkbox" data-doc="cuil"><span>Constancia de CUIL impresa</span></label>
+              <label><input type="checkbox" data-doc="carpeta"><span>Carpeta de tres solapas color marrón</span></label>
+              <label><input type="checkbox" data-doc="sinide"><span>Planilla SINIDE (fotocopiadora)</span></label>
+              <label><input type="checkbox" data-doc="solicitud"><span>Solicitud de inscripción completa</span></label>
+              <label><input type="checkbox" data-doc="bono"><span>Bono contribución institucional</span></label>
+              <label><input type="checkbox" data-doc="prontuarial"><span>Planilla prontuarial vigente</span></label>
+              <label><input type="checkbox" data-doc="psicofisico"><span>Certificado de aptitud psicofísica</span></label>
+              <label><input type="checkbox" data-doc="matricula"><span>Hoja de matrícula anual</span></label>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Sede, Horarios y Canal Oficial (Teléfono eliminado) -->
+          <div class="contact-hub-column" data-animate>
+            <div class="hub-card">
+              <div class="hub-card-ico"><svg class="ico"><use href="#ico-pin"/></svg></div>
+              <div>
+                <span>UBICACIÓN DE LA SEDE CENTRAL</span>
+                <h3>Av. Dr. Carlos Undiano y Silvester</h3>
+                <p>Barrio Bernacchi · San Pedro de Jujuy · Provincia de Jujuy</p>
+                <a href="https://maps.app.goo.gl/Bxk7Fef7Ldrvm1pt6" target="_blank" rel="noopener noreferrer" class="hub-link">
+                  Ver ubicación en Google Maps <svg class="ico"><use href="#ico-next"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="hub-card">
+              <div class="hub-card-ico"><svg class="ico"><use href="#ico-clock"/></svg></div>
+              <div>
+                <span>ATENCIÓN PRESENCIAL</span>
+                <h3>Lunes a Viernes · 13:30 a 22:00 hs</h3>
+                <p>Secretaría y Preceptoría del IES N.º 9 «Juana Azurduy». Consultá fechas de cursillo de ingreso y mesas de examen.</p>
+              </div>
+            </div>
+
+            <div class="hub-whatsapp-card">
+              <div class="wa-header">
+                <span class="live-dot"></span>
+                <strong>Canal Oficial de WhatsApp · IES N.º 9</strong>
+              </div>
+              <p>Seguí el canal de difusión institucional para enterarte al instante de las fechas de preinscripción y novedades académicas.</p>
+              <a href="https://whatsapp.com/channel/0029VaxpBNyLI8YSkAhdHB25" target="_blank" rel="noopener noreferrer" class="btn-solid-orange">
+                Unirse al Canal de WhatsApp <svg class="ico"><use href="#ico-next"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA CON ESCUDOS COMPLETOS Y DATOS DE AUTORÍA -->
+  <footer class="main-footer">
+    <div class="shell footer-upper">
+      <div class="footer-brand-row">
+        <img src="assets/logo-ies9.webp" alt="Escudo completo IES N.º 9" class="footer-ies-full" data-fallback="ies">
+        <img src="assets/logoAdministracion.png" data-try-srcs="assets/logoAdministracion.png,assets/logoAdministracion.jpg,assets/logoAdministracion_2.jpg" alt="Escudo completo Ciencias de la Administración" class="footer-admin-full" data-fallback="admin">
+        <div>
+          <strong>IES N.º 9 «Juana Azurduy» · San Pedro de Jujuy</strong>
+          <p>Profesorado de Educación Secundaria en Ciencias de la Administración</p>
+        </div>
+      </div>
+      <a href="#top" class="btn-top-circle" aria-label="Volver arriba">↑</a>
+    </div>
+
+    <div class="shell footer-lower">
+      <span>San Pedro de Jujuy · Jujuy · Argentina</span>
+      <span>Diseño Curricular: Resolución N.º 13963-E/19 · Correlatividades: Resolución N.º 2311-E/20</span>
+      <span>© 2026 Todos los derechos reservados · Diseño y desarrollo web: Sebastián Raul Saldias</span>
+    </div>
+  </footer>
+
+  <!-- VISOR MODAL DE PANTALLA COMPLETA PARA EL CARRUSEL DE GRUPOS -->
+  <dialog class="fullscreen-modal" id="image-dialog" aria-label="Visor de fotografías en pantalla completa">
+    <button type="button" class="modal-close-btn" id="dialog-close" aria-label="Cerrar imagen">
+      <svg class="ico"><use href="#ico-close"/></svg>
+    </button>
+    <img id="dialog-image" src="assets/grupo 5.jpg" alt="">
+    <p id="dialog-caption"></p>
+    <div class="modal-nav-bar">
+      <button type="button" id="dialog-prev" aria-label="Foto anterior"><svg class="ico"><use href="#ico-prev"/></svg></button>
+      <span id="dialog-counter">1 / 5</span>
+      <button type="button" id="dialog-next" aria-label="Siguiente foto"><svg class="ico"><use href="#ico-next"/></svg></button>
+    </div>
+  </dialog>
+</body>
+</html>
